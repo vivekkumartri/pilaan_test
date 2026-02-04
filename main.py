@@ -35,8 +35,8 @@ if not MONGO_URI:
     raise RuntimeError("MONGO_URI not set")
 
 client = MongoClient(MONGO_URI)
-db = client["personality_db"]
-collection = db["assessments"]
+db = client["pilaan"]
+collection = db["user"]
 
 # ---------------- MODELS ----------------
 
