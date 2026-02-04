@@ -56,7 +56,7 @@
                 // Remove all non-digit characters
                 const cleaned = phone.replace(/\D/g, '');
                 // Check if it's between 10-15 digits (covers most international formats)
-                return cleaned.length >= 10 && cleaned.length <= 15;
+                return cleaned.length >= 10 && cleaned.length <= 13;
             }
         };
         
