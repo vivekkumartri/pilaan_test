@@ -355,14 +355,4 @@ if STATIC_DIR.exists():
 
 if __name__ == "__main__":
     import uvicorn
-    print("=" * 60)
-    print("Personality Assessment Server with Tracking")
-    print("=" * 60)
-    print(f"Data will be saved to: {DATA_DIR.absolute()}")
-    print("Features enabled:")
-    print("  ✓ Response timing tracking")
-    print("  ✓ Cursor movement tracking")
-    print("  ✓ Detailed analytics")
-    print(f"Starting server on http://localhost:8000")
-    print("=" * 60)
-    uvicorn.run(app, host="0.0.0.0", port=8000, log_level="info")
+    uvicorn.run(app)
